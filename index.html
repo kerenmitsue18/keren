@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- Metadatos -->
+  <meta charset="utf-8">
+  <meta name="author" content="Jane Doe">
+  <meta name="description" content="Portafolio de desarrollo web de Jane Doe">
+  <meta name="keywords" content="HTML, CSS, JavaScript, React">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Titulo -->
+  <title>Keren Mitsue | Página Personal</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="imagenes/icono.png">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- Iconos de Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <!-- CSS -->
+  <link href="style.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Victor+Mono:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&family=Kalam&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Grandiflora+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Grandiflora+One&family=Raleway:wght@500&display=swap"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Barra de navegacion -->
+  <nav class="navbar  navbar-expand-lg bg-body-tertiary sticky-top navbar-light " style="min-height: 10px;">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-toggler">
+        <a class="navbar-brand" href="#">
+          <img src="imagenes/icono.png" width="40" alt="Logo de la página web">
+        </a>
+
+        <ul class="navbar-nav d-flex justify-content-center align-items-center">
+          <li class="nav-item">
+            <a class="nav-link" href="#participacion">Participaciones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mí</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experiencia">Experiencia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#proyectos">Proyectos</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#testimonios">Testimonios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Seccion Hero -->
+  <section class="hero align-items-stretch">
+    <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+      <img class="hero-imagen-desarrollador rounded-circle" src="imagenes/perfil.jpg" alt="Foto de Keren Mitsue">
+      <h1>Hola, soy Keren Mitsue! </h1>
+      <!--<h2>Ingeniería en Computación y escribo artículos de IA.</h2>-->
+
+      <!--Animación con JavaScript-->
+      <h2 class="animation mb-4" id="typewriter"></h2>
+      <div class="hero-inferior">
+        <blockquote class="cita ">
+          <p class="mb-0">"Los buenos programadores usan sus cerebros, pero unas buenas directrices nos ahorran de tener
+            que hacerlo en cada caso"</p>
+          <cite title="Source Title">Francis Glassborow</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!---------SOBRE MI SLIDER ---------->
+  <!-- Carrusel -->
+  <section id="participacion">
+    <h2 class="seccion-titulo texto-negro text-center">Participaciones</h2>
+    <h3 class="seccion-descripcion text-center">He participado en conferencias académicas y en congresos científicos.
+    </h3>
+    <div id="participacion-carrusel" class="carousel  slide w-50" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container">
+            <img src="imagenes/image01.png" class=" participacion-imagen  d-block w-100" alt="Ciclo de Conferencias">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <img src="imagenes/image03.jpg" class="participacion-imagen  d-block w-100" alt="Tervera Bienal Estudiantil" >
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <img src="imagenes/image04.jpg" class="participacion-imagen d-block w-100" alt="Exposición de Bienal" >
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <img src="imagenes/image02.png" class="participacion-imagen  d-block w-100" alt="Exposicion GitHub" >
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <img src="imagenes/image05.jpg" class=" participacion-imagen  d-block w-100" alt="Exposición en el CIM Orizaba" >
+          </div>
+        </div>
+      </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#participacion-carrusel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#participacion-carrusel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+    </div>
+  </section>
+
+
+
+
+  <!-- Sobre mi -->
+  <section id="sobre-mi" class="sobre-mi seccion-oscura">
+    <div class="contenedor">
+      <h2 class="seccion-titulo">Conoce a Keren Mitsue</h2>
+      <p class="seccion-texto">
+        Técnico en informática y estudiante en Ingeniería en Computación de 9° semestre. en CU Zumpango.
+        <br>
+        He participado en la realización de 3 artículos,en el área de Inteligencia Artifical; de los cuáles, dos
+        artículos están publicados en una revista indizada. Cuento con conocimientos en los lenguajes de programación de
+        Java, Python y C basandose en los diferentes paradigmas de programación.
+      <p class="text-sobre-mi"> Mis áreas de interés son: </p>
+      <div class="badges-contenedor">
+        <span class="badge"> <i class="bi bi-file-bar-graph"></i> Ciencia de datos</span>
+        <span class="badge"> <i class="bi bi bi-gear"></i> Machine Learning</span>
+        <span class="badge"> <i class="bi bi-robot"></i> IA</span>
+        <span class="badge"> <i class="bi bi-browser-chrome"></i>  Aplicaciones web</span>
+        <span class="badge"> <i class="bi bi-window-split"></i> Aplicaciones Móviles</span>
+      </div>
+      <p class="text-sobre-mi"> Mis hobbies son: </p>
+      <div class="badges-contenedor">
+        <span class="badge"> <i class="bi bi-camera"></i> Fotografía</span>
+        <span class="badge"> <i class="bi bi-easel"></i> Dibujar</span>
+        <span class="badge"> <i class="bi bi-book"></i> Leer</span>
+    </div>
+  </section>
+
+  <!-- Experiencia -->
+  <section id="experiencia" class="experiencia seccion-clara">
+    <div class="container text-center">
+      <div class="row">
+        <!-- Programación -->
+        <div class="columna col-12 col-md-4">
+          <i class="bi bi-laptop"></i>
+          <p class="experiencia-titulo">Programación</p>
+          <p>He terminado mi formación de principiante de programación en Oracle Education.
+            Actualmente estudió la especialización en programación back-end en dicha empresa. </p>
+          <div class="badges-contenedor">
+            <span class="badge">HTML</span>
+            <span class="badge">CSS</span>
+            <span class="badge">JavaScript</span>
+            <span class="badge">React</span>
+            <span class="badge">Java</span>
+            <span class="badge">Python</span>
+          </div>
+        </div>
+        <!-- Articulos -->
+        <div class="columna col-12 col-md-4">
+          <i class="bi bi-laptop"></i>
+          <p class="experiencia-titulo">Artículos</p>
+          <p>
+            He escrito 3 artículos de Machine Learning. Dos de ellos han sido publicados en la revista periódica del
+            "COLOQUIO DE INVESTIGACIÓN MULTIDISCIPLINARIA" Volumen 10. Núm. 1, Octubre 2022. ISSN: 2007 8102
+            <br>
+            <br>
+            <a  class="journal" href="http://depi.orizaba.tecnm.mx/Journals/Journal_CIM_2022.pdf">JOURNAL CIM – REVISTA DIGITAL</a>
+          </p>
+          <div class="badges-contenedor">
+            <span class="badge ">Machine Learning</span>
+            <span class="badge ">Clasificadores</span>
+            <span class="badge ">Análisis de sentimientos</span>
+
+          </div>
+        </div>
+        <!-- Estudiante -->
+        <div class="columna col-12 col-md-4">
+          <i class="bi bi-laptop"></i>
+          <p class="experiencia-titulo">Estudiante</p>
+          <p>
+            Estudio la carrera en Ingeniería en Computación, como autodidacta he cursado diferentes cursos de
+            programación back-end.
+            Además de contar con certificaciones de Cisco Networking Academic y certificación en "SCRUM Fundamentals"
+          </p>
+          <div class="badges-contenedor">
+            <span class="badge">Tecnolochicas PRO</span>
+            <span class="badge">CISCO</span>
+            <span class="badge">Oracle Education</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proyectos -->
+  <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
+    <h2 class="seccion-titulo texto-negro">Mis proyectos recientes</h2>
+    <h3 class="seccion-descripcion">A continuación se muestran algunos proyectos que he creado recientemente...</h3>
+    <!-- Galeria de Proyectos -->
+    <div class="container text-center proyectos-contenedor">
+      <div class="row">
+        <!-- Proyecto 1 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="imagenes/proyecto1.png" alt="Nube dinámica de palabras">
+            <div class="overlay">
+              <p>Nube dinámica de palabras</p>
+              <div class="iconos-contenedor">
+                <a href="https://github.com/kerenmitsue18/Nube_Dinamica_Palabras" target="_blank"
+                  rel="noopener noreferrer">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-laptop"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Proyecto 2 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="imagenes/proyecto2.png" alt="Conversor de moneda">
+            <div class="overlay">
+              <p>Conversor de moneda</p>
+              <div class="iconos-contenedor">
+                <a href="https://github.com/kerenmitsue18/Conversor_ONE" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="#/" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-laptop"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Proyecto 3 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="imagenes/proyecto3.png" alt="Clon de Google">
+            <div class="overlay">
+              <p>Clon de google</p>
+              <div class="iconos-contenedor">
+                <a href="https://github.com/kerenmitsue18/Conversor_ONE" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="#/" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-laptop"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <a href="https://github.com/kerenmitsue18" target="_blank" rel="noopener noreferrer">
+        <button type="button" class="btn-more">
+          Ver más proyectos
+          <i class="bi bi-arrow-right-circle-fill"></i>
+        </button>
+      </a>
+  </section>
+
+  <!-- Testimonios -->
+  <section id="testimonios" class="testimonios seccion-clara">
+    <h2 class="seccion-titulo">Testimonios</h2>
+    <h3 class="seccion-descripcion">Estos son algunos testimonios de personas que han trabajado conmigo...</h3>
+
+    <!-- Carrusel -->
+    <div id="testimonios-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container">
+            <img class="testimonio-imagen rounded-circle" src="imagenes/cliente2.jpg" alt="Foto de Gino">
+            <p class="testimonio-texto">Durante el bootcamp de Tecnolochicas Pro 2023, 
+              tuve el gusto de trabajar con Keren y me complace reconocerla como una talentosa desarrolladora web. Es una persona que le gusta aprender mucho para mejorar en sus habilidades cada día. 
+              Ha demostrado ser una persona responsable, comprometida y trabajadora.
+            </p>
+            <div class="testimonio-info">
+              <p class="cliente"> Valerie Cristel Lara Díaz</p>
+              <p class="cargo">estudiante de la Licenciatura en Informática Administrativa en la UAEMéx </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <img class="testimonio-imagen rounded-circle" src="imagenes/cliente1.JPG" alt="Foto de Nora">
+            <p class="testimonio-texto">Keren ha demostrado ser una excelente estudiante!.
+               Durante el desarrollo de proyectos, ha mostrado un sólido dominio de tecnologías front-end como HTML, CSS y JavaScript,
+                logrando crear interfaces de usuario atractivas y funcionales.”
+            </p>
+            <div class="testimonio-info">
+              <p class="cliente">Miranda Jaramillo</p>
+              <p class="cargo">Mentora de TECNOLOchicas 2023</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <img class="testimonio-imagen rounded-circle" src="imagenes/cliente3.png" alt="Foto de Leonardo">
+            <p class="testimonio-texto">Me complace recomendar a Keren dado que sus habilidades demostradas durante el bootcamp de Tecnolochicas mostro ser una persona enfocada en aprender, conocer y practicar continuamente para desarrollar sus habilidades como desarrolladora fronted jr.
+
+            </p>
+            <div class="testimonio-info">
+              <p class="cliente">Jennifer Morales </p>
+              <p class="cargo">beneficiaria de TECNOLOchicas Pro.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </section >
+
+
+  <!-- Contacto -->
+  <section id="contacto" class="contacto seccion-oscura">
+    <div class="container">
+      <div class="container text-center rectangulo d-flex justify-content-evenly">
+        <div class="row">
+          <div class="col-12 col-md-4 seccion-titulo">
+            ¡Contactame!
+          </div>
+          <div class="col-12 col-md-4 descripcion">
+            Contáctame para iniciar tu proyecto de desarrollo web o para trabajar conmigo.
+          </div>
+          <div class="col-12 col-md-4">
+            <a href="mailto:kerenramver@gmail.com">
+              <button type="button">
+                Contacto
+                <i class="bi bi-envelope-check-fill"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pie de pagina (footer) -->
+  <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+    <img class="footer-logo" src="imagenes/icono.png" alt="Logo del portafolio">
+    <p class="cita text-center">No juzgues cada día por lo que cosechas, sino por las semillas que plantas.</p>
+    <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+      <a href="https://twitter.com/kerenramver" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-twitter"></i>
+      </a>
+      <a href="https://github.com/kerenmitsue18" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/keren-vergara/" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-linkedin"></i>
+      </a>
+      <a href="https://www.instagram.com/keren.vramirez/" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-instagram"></i>
+      </a>
+      <a href="mailto:kerenramver@gmail.com" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-envelope"></i>
+      </a>
+    </div>
+    <div class="derechos-de-autor">Creado por Keren Mitsue (2023) &#169;</div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <script src="main.js"></script>
+
+</body>
+
+</html>
